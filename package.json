@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/izztnkr/Read-Me-Wizard/issues"
   },
-  "homepage": "https://github.com/izztnkr/Read-Me-Wizard#readme"
+  "homepage": "https://github.com/izztnkr/Read-Me-Wizard#readme",
+  "dependencies": {
+    "inquirer": "^8.1.5"
+  }
 }

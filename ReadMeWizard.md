@@ -1,46 +1,49 @@
 
   
 **Test Title**
----
 
+# Table of Contents
 
-*Table of Contents*
----
-<a href="https://github.com/izztnkr">Description</a>
+- [Description](#description)
 
-<a href="https://github.com/izztnkr">Installation</a>
+- [Installation](#installation)
 
-<a href="https://github.com/izztnkr">Usage</a>
+- [Usage](#usage)
 
-<a href="https://github.com/izztnkr">License</a>
+- [License](#license)
 
-<a href="https://github.com/izztnkr">Contributing</a>
+- [Contributing](#contributing)
 
-<a href="https://github.com/izztnkr">Tests</a>
+- [Tests](#tests)
 
-<a href="https://github.com/izztnkr">Questions</a>
+- [Questions](#questions)
 
 ---
-**Description**
----
----
-**Installation**
----
----
-**Usage**
----
----
-**License**
----
----
-**Contributing**
----
+
+# Description
 
 ---
-**Tests**
+
+# Installation
+
 ---
+
+# Usage
+
 ---
-**Questions**
+
+# License
+
 ---
-  
+
+# Contributing
+
+---
+
+# Tests
+
+---
+
+# Questions
+
   

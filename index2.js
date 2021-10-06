@@ -58,48 +58,51 @@ const generateMarkdownStyling = (name, projecTitle) => {
   return `
   
 **${projecTitle}**
----
 
+# Table of Contents
 
-*Table of Contents*
----
-<a href="https://github.com/${name}">Description</a>
+- [Description](#description)
 
-<a href="https://github.com/${name}">Installation</a>
+- [Installation](#installation)
 
-<a href="https://github.com/${name}">Usage</a>
+- [Usage](#usage)
 
-<a href="https://github.com/${name}">License</a>
+- [License](#license)
 
-<a href="https://github.com/${name}">Contributing</a>
+- [Contributing](#contributing)
 
-<a href="https://github.com/${name}">Tests</a>
+- [Tests](#tests)
 
-<a href="https://github.com/${name}">Questions</a>
+- [Questions](#questions)
 
 ---
-**Description**
----
----
-**Installation**
----
----
-**Usage**
----
----
-**License**
----
----
-**Contributing**
----
+
+# Description
 
 ---
-**Tests**
+
+# Installation
+
 ---
+
+# Usage
+
 ---
-**Questions**
+
+# License
+
 ---
-  
+
+# Contributing
+
+---
+
+# Tests
+
+---
+
+# Questions
+
   `;
 };
 

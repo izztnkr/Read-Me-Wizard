@@ -9,41 +9,41 @@ const Choices = require("inquirer/lib/objects/choices");
 //tell computer to use inquirer to ask a set of questions and recieve answers
 //tell computer to run it
 //from command line "node index2.js"
-// const questions = [
-//   {
-//     type: "input",
-//     name: "first_name",
-//     message: "What's your first name?",
-//   },
-//   {
-//     type: "input",
-//     name: "last_name",
-//     message: "What's your last name?",
-//   },
-// ];
+const questions = [
+  {
+    type: "input",
+    name: "first_name",
+    message: "What's your first name?",
+  },
+  {
+    type: "input",
+    name: "last_name",
+    message: "What's your last name?",
+  },
+];
 
-// inquirer
-//   .prompt(questions)
-//   .then((answers) => {
-//     // answers = (first_name, +"" + last_name);
-//     // console.log(answers);
-//     // Use user feedback for... whatever!!
-//   })
-//   .catch((error) => {
-//     if (error.isTtyError) {
-//       console.log(
-//         "Couldn't be rendered in the current environment. Yes, this is an error message"
-//       );
-//     } else {
-//       console.log("Something else went totes wrong");
-//     }
-//   });
+inquirer.prompt(questions).then((answers) => {
+  answers = `${answers.first_name} + ${answers.last_name}`;
+  console.log(answers);
+  // Use user feedback for... whatever!!
+});
+// .catch((error) => {
+//   if (error.isTtyError) {
+//     console.log(
+//       "Couldn't be rendered in the current environment. Yes, this is an error message"
+//     );
+//   } else {
+//     console.log("Something else went totes wrong");
+//   }
+// });
 
 //-----STRING or TEMPLATE LITERAL-----//
 //tell computer to display answers
 //it would be a template literate to file
-// const message = (first_name, +"" + last_name);
+// const nombre = "Izzbo";
+// const message = `My name is ${nombre} .`;
 // console.log(message);
+
 // const generateReadMePage = (questions)
 
 // const generatePage = (name, name) => `Name: ${first_name}, Name: ${last_name}`;

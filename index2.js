@@ -22,20 +22,17 @@ inquirer.prompt(questions).then((answers) => {
   const { name } = answers;
 
   console.log(answers);
-  let projectTitle = `${answers.project_Title}`;
-  let lastName = `${answers.last_name}`;
-  console.log(lastName);
-  console.log(projectTitle);
+
   //-----FILE MARKDOWN STYLING-----//
   const generateMarkdownStyling = (answers) => {
     return `
     
-**${projectTitle}**
+**${answers.project_Title}**
 
 # Table of Contents
 
 - [Description](#description)
-${lastName}
+${answers.last_name}
 
 - [Installation](#installation)
 

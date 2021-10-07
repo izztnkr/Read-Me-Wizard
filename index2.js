@@ -13,8 +13,18 @@ const questions = [
   },
   {
     type: "input",
-    name: "last_name",
+    name: "last_Name",
     message: "What's your last name?",
+  },
+  {
+    type: "input",
+    name: "email_Me",
+    message: "What is the email to reach you at?",
+  },
+  {
+    type: "input",
+    name: "git_Hub",
+    message: "What is your GitHub username?",
   },
 ];
 //-----STRING or TEMPLATE LITERAL-----// place the answers somewhere & tell computer to display answers
@@ -32,7 +42,7 @@ inquirer.prompt(questions).then((answers) => {
 # Table of Contents
 
 - [Description](#description)
-${answers.last_name}
+${answers.last_Name}
 
 - [Installation](#installation)
 
@@ -73,6 +83,11 @@ ${answers.last_name}
 ---
 
 # Questions
+Do you have questions? Here's how to contact me. 
+
+<a href = "mailto: ${answers.email_Me}">Email me!</a>
+
+<a href= "https://github.com/${answers.git_Hub}">GitHub </a>
 
   `;
   };

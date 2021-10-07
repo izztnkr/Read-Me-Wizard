@@ -27,7 +27,7 @@ inquirer.prompt(questions).then((answers) => {
   const generateMarkdownStyling = (answers) => {
     return `
     
-**${answers.project_Title}**
+# **${answers.project_Title}**
 
 # Table of Contents
 

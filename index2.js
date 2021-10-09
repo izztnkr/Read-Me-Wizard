@@ -9,7 +9,7 @@ const questions = [
   {
     type: "input",
     name: "project_Title",
-    message: "What's your project's name?",
+    message: "What is the name of your project?",
   },
   {
     type: "input",
@@ -25,6 +25,38 @@ const questions = [
     type: "input",
     name: "git_Hub",
     message: "What is your GitHub username?",
+  },
+  {
+    type: "input",
+    name: "project_Description",
+    message: "What is your project about? Provide a description.",
+  },
+  {
+    type: "input",
+    name: "project_Installation",
+    message:
+      "How does one install your project? Provide a description or useful information.",
+  },
+  {
+    type: "input",
+    name: "project_Usage",
+    message: "How do you use your project? Provide a description or example",
+  },
+  {
+    type: "input",
+    name: "project_Contributing",
+    message:
+      "Are there any contribution guidelines which the user should know?",
+  },
+  {
+    type: "input",
+    name: "project_Tests",
+    message: "Are there any test instructions? Provide a step by step message.",
+  },
+  {
+    type: "input",
+    name: "project_Questions",
+    message: "Is there any additional contact info the user should know?",
   },
   {
     type: "list",
@@ -76,6 +108,8 @@ inquirer.prompt(questions).then((answers) => {
     
 # **${answers.project_Title}**
 ${licenseChoice.badge_MD}
+=======
+
 
 # Table of Contents
 
@@ -98,13 +132,19 @@ ${licenseChoice.badge_MD}
 
 # Description
 
+${answers.project_Description}
+
 ---
 
 # Installation
 
+${answers.project_Installation}
+
 ---
 
 # Usage
+
+${answers.project_Usage}
 
 ---
 
@@ -116,9 +156,13 @@ ${licenseChoice.badge_Copy}
 
 # Contributing
 
+${answers.project_Contributing}
+
 ---
 
 # Tests
+
+${answers.project_Tests}
 
 ---
 
@@ -129,6 +173,7 @@ Do you have questions? Here's how to contact me.
 
 <a href= "https://github.com/${answers.git_Hub}">${answers.full_Name}'s GitHub </a>
 
+${answers.project_Questions}
   `;
   };
   //-----FILE or WRITE FILE-----// ie tell the computer to write a file

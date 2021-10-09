@@ -130,13 +130,19 @@ ${licenseChoice.badge_MD}
 
 # Description
 
+${answers.project_Description}
+
 ---
 
 # Installation
 
+${answers.project_Installation}
+
 ---
 
 # Usage
+
+${answers.project_Usage}
 
 ---
 
@@ -148,9 +154,13 @@ ${licenseChoice.badge_Copy}
 
 # Contributing
 
+${answers.project_Contributing}
+
 ---
 
 # Tests
+
+${answers.project_Tests}
 
 ---
 
@@ -160,6 +170,8 @@ Do you have questions? Here's how to contact me.
 <a href = "mailto: ${answers.email_Me}">${answers.full_Name}'s email</a>
 
 <a href= "https://github.com/${answers.git_Hub}">${answers.full_Name}'s GitHub </a>
+
+${answers.project_Questions}
 
   `;
   };

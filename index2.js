@@ -9,7 +9,7 @@ const questions = [
   {
     type: "input",
     name: "project_Title",
-    message: "What's your project's name?",
+    message: "What is the name of your project?",
   },
   {
     type: "input",
@@ -25,6 +25,38 @@ const questions = [
     type: "input",
     name: "git_Hub",
     message: "What is your GitHub username?",
+  },
+  {
+    type: "input",
+    name: "project_Description",
+    message: "What is your project about? Provide a description.",
+  },
+  {
+    type: "input",
+    name: "project_Installation",
+    message:
+      "How does one install your project? Provide a description or useful information.",
+  },
+  {
+    type: "input",
+    name: "project_Usage",
+    message: "How do you use your project? Provide a description or example",
+  },
+  {
+    type: "input",
+    name: "project_Contributing",
+    message:
+      "Are there any contribution guidelines which the user should know?",
+  },
+  {
+    type: "input",
+    name: "project_Tests",
+    message: "Are there any test instructions? Provide a step by step message.",
+  },
+  {
+    type: "input",
+    name: "project_Questions",
+    message: "Is there any additional contact info the user should know?",
   },
   {
     type: "list",
@@ -134,15 +166,8 @@ Do you have questions? Here's how to contact me.
   //-----FILE or WRITE FILE-----// ie tell the computer to write a file
   fs.writeFile("./ReadMeWizard.md", generateMarkdownStyling(answers), (err) => {
     if (err) throw err;
-    console.log("doneskies! You can check for file now.");
+    console.log(
+      "Generator complete. You can check for your ReadMeWizard.md file now!"
+    );
   });
 });
-// .catch((error) => {
-//   if (error.isTtyError) {
-//     console.log(
-//       "Couldn't be rendered in the current environment. Yes, this is an error message"
-//     );
-//   } else {
-//     console.log("Something else went totes wrong");
-//   }
-// });

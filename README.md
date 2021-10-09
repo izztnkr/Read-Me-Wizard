@@ -28,5 +28,5 @@ This is a readme file generator which can be run from your terminal.
 - Functionality and markdown design created from scratch.
 - License and badge information courtesy of [lukas-h](https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba). 
 
- ## Link to deployed application
- https://izztnkr.github.io/Read-Me-Wizard/
+ ## Link to walkthrough video
+ https://watch.screencastify.com/v/ByN6lguvWVog4VLNca8I
